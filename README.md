@@ -56,8 +56,8 @@ cd multi-factor-auth
 #### 2️⃣ Configure MySQL Database  & OAuth 2.0
 Update `application.properties` with your database credentials:
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/authenticated_login
-spring.datasource.username=root
+spring.datasource.url=jdbc:mysql://localhost:db_port/db_name
+spring.datasource.username=your_db_username
 spring.datasource.password=your_password
 ```
 ```properties
@@ -107,8 +107,8 @@ Example test from `UserRepositoryTest.java`:
 public void testCreateUser() {
     PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
     Users user = new Users();
-    user.setUsername("test1zx");
-    user.setPassword(passwordEncoder.encode("test1233"));
+    user.setUsername("testUser");
+    user.setPassword(passwordEncoder.encode("testPassword"));
     user.setRole("USER");
 
     Users savedUser = repo.save(user);
