@@ -49,7 +49,7 @@ public class RegisterController {
     }
 
     // Get user by ID
-    @GetMapping("/user/{id}")
+    @GetMapping("/user/id/{id}")
     public ResponseEntity<Users> getUserById(@PathVariable Long id) {
         Optional<Users> user = userRepository.findById(id);
         return user.map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build()); // Return 404 if user not found
