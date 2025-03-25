@@ -90,7 +90,7 @@ The server starts at **`http://localhost:8081`** 🚀
 |--------|---------|-------------|
 | `POST` | `/api/auth/register` | Register a new user |
 | `GET`  | `/api/auth/user/{username}` | Get user by username |
-| `GET`  | `/api/auth/user/{id}` | Get user by ID |
+| `GET`  | `/api/auth/user/id/{id}` | Get user by ID |
 
 #### 📝 Register User (Example Request)  
 **POST** `http://localhost:8081/api/auth/register`  
@@ -130,3 +130,9 @@ public void testCreateUser() {
 ✔️ **Role-Based Access Control**  
 
 ---
+
+🖼 **Website Screenshot:**  
+![image](https://github.com/user-attachments/assets/0c4df158-940c-42f6-9943-9ac4762ff381)
+![image](https://github.com/user-attachments/assets/fabc540a-d3c2-47d9-af7c-94b428939936)
+![image](https://github.com/user-attachments/assets/ab83dace-6cd8-4ffd-9e31-b6df2ba9c086)
+
